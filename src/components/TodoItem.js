@@ -31,11 +31,6 @@ class TodoItem extends Component{
 	}
 };
 
-// PropTypes
-TodoItem.propType = {
-	todo: PropTypes.object.isRequired,
-};
-
 const btnStyle = {
 	background : 'red',
 	color: '#fff',
@@ -45,4 +40,13 @@ const btnStyle = {
 	cursor: 'pointer',
 	float: 'right',
 }
+
+// PropTypes
+TodoItem.propType = {
+	todo: PropTypes.object.isRequired,
+	markComplete: PropTypes.func.isRequired,
+	deleteTodo: PropTypes.func.isRequired,
+};
+
+
 export default TodoItem;
